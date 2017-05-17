@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Walter;
+    src: url( fonts/Walter.ttf);
+}
+@font-face {
+    font-family: Otterly;
+    src: url(fonts/Otterly.ttf);
+}
+h1,h3 {
+    font-family: Walter;
+    text-align: center;
+    color: #7c9299;
+}
+h2 {
+    font-family: Otterly;
+    text-align: left;
+    color: fff;
+    text-shadow: 2px 2px black;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    background-color: #7c9299;
+}
+.columns {
+    display:inline-flex;
+}
+
+.column {
+    background: #00cc8f;
+        border-radius: 25px 25px;
+    border: 5px solid #1effbc;
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+a:link {
+    color: White;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: White;
+}
+
+/* mouse over link */
+a:hover {
+    color: Gray;
+}
+
+/* selected link */
+a:active {
+    color: White;
+} 
+.main-column {
+    flex: 2;
+}
+
+.article {
+    background: #02aeee;
+    border: 5px solid #0295ca;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px 25px;
+    vertical-align: middle;
+}
+.nav {
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+}
+#header {
+    background-color: #b4e33d;
+        border-radius: 25px 25px;
+    text-shadow: 2px 2px black;
+    
+}
+.nav:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.welcome {
+    
+}
